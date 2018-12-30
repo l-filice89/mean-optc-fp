@@ -1,5 +1,103 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
+<!-- Navigation bar -->
+<header style="min-height: 2vh!important;">
+  <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+    <a class="navbar-brand" href="#"><img src="https://image.ibb.co/n56VDT/title_icon.png" width="30" height="30" class="d-inline-block align-top" alt=""/> OPTC-FP</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="/">Home</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="/planner/boxlist">Boxlist</a>
+        </li>
+        <li class="nav-item dropdown active">
+          <a class="nav-link dropdown-toggle" href="#" id="globalDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Global events
+          </a>
+          <div class="dropdown-menu" aria-labelledby="globalDropdown">
+            <a class="dropdown-item" href="/active_events/global">Ongoing</a>
+            <a class="dropdown-item disabled">Permanent</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown active">
+          <a class="nav-link dropdown-toggle" href="#" id="japanDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Japan events
+          </a>
+          <div class="dropdown-menu" aria-labelledby="japanDropdown">
+            <a class="dropdown-item" href="/active_events/japan">Ongoing</a>
+            <a class="dropdown-item disabled">Permanent</a>
+          </div>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="/settings">Settings</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="https://www.patreon.com/optcfp">Donate</a>
+        </li>
+      </ul>
+      <form class="form-inline">
+          <button class="btn btn-outline-danger" type="button" onclick="alert('Successfully logged out, come back soon!'); document.location.href='/logout'">Logout</button>
+          <button class="btn btn-outline-primary" type="button" style="margin-right: 5px" onclick="document.location.href='/signup'">Sign up</button>
+          <button class="btn btn-outline-success" type="button" onclick="document.location.href='/login'">Login</button>
+      </form>
+    </div>
+  </nav>
+</header>
+
+<main role="main" class="container" style="min-height: 90vh!important;">
+
+</main>
+
+<!-- Footer -->
+
+<footer class="page-footer font-small blue pt-4 mt-4" style="">
+  <!-- Footer Links -->
+  <div class="container-fluid text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-6 mt-md-0 mt-3 text-center">
+
+        <!-- Content -->
+        <h5>Powered by Senji <a href="mailto:senji.no.kaizoku@gmail.com"><img src="https://cdn1.iconfinder.com/data/icons/basic-application-vol-1/128/Material_Design-21-512.png"  width="30" height="30" class="d-inline-block align-top" alt=""/></a></h5>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none pb-3">
+
+      <!-- Grid column -->
+      <div class="col-md-6 mb-md-0 mb-3 text-center">
+
+        <!-- Links -->
+        <h5>Social media <a href="https://www.patreon.com/optcfp"><img src="https://cdn6.aptoide.com/imgs/2/8/e/28e759bcb1e00ad978afdf443e60c11e_icon.png?w=256"  width="30" height="30" class="d-inline-block align-top" alt=""/></a>
+        <a href="https://www.reddit.com/user/Senji89/"><img src="http://icons.iconarchive.com/icons/uiconstock/socialmedia/256/Reddit-icon.png"  width="30" height="30" class="d-inline-block align-top" alt=""/></a>
+        <a href="https://twitter.com/optcfp"><img src="http://files.softicons.com/download/social-media-icons/flat-gradient-social-icons-by-guilherme-lima/png/256x256/Twitter.png"  width="30" height="30" class="d-inline-block align-top" alt=""/></a>
+        <a href="https://discord.gg/md7Xs7r"><img src="https://www.shareicon.net/data/128x128/2017/06/21/887435_logo_512x512.png"  width="30" height="30" class="d-inline-block align-top" alt=""/></a></h5>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">
+    OPTC-FP doesn't own any of the content displayed in the website. Every content is owned by Eiichiro Oda/Shueisha, Toei Animation and Bandai Namco.
+  </div>
+  <!-- Copyright -->
+</footer>
+
+<!-- <div style="text-align:center">
   <h1>
     Welcome to {{ title }}!
   </h1>
@@ -16,6 +114,6 @@
   <li>
     <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
   </li>
-</ul>
+</ul> -->
 
 <router-outlet></router-outlet>
